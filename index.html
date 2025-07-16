@@ -35,7 +35,7 @@
     }
     header {
       width: 100%;
-      padding: 24px 0; /* Un peu moins de padding vertical pour un look plus compact */
+      padding: 24px 0;
       background: linear-gradient(90deg, var(--primary), var(--accent));
       border-radius: 0 0 var(--radius) var(--radius);
       box-shadow: var(--shadow);
@@ -50,16 +50,13 @@
       font-size: 2.1rem;
       font-weight: 700;
       letter-spacing: 1px;
-
-      /* ↓↓↓ LA CORRECTION POUR L'ALIGNEMENT VERTICAL EST ICI ↓↓↓ */
       display: flex;
-      flex-direction: column; /* Empile les éléments verticalement */
-      align-items: center;    /* Centre les éléments horizontalement */
-      gap: 4px;               /* Petit espace entre l'icône et le texte */
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
     }
-    /* Style pour l'icône dans le titre */
     header h1 i {
-        font-size: 2.5rem; /* Augmente légèrement la taille de l'icône */
+        font-size: 2.5rem;
     }
     .content {
       width: 100%;
@@ -133,7 +130,7 @@
       <h3><i class="ph ph-tooth"></i> Médecine Dentaire</h3>
       <div class="button-group">
         <button type="button" class="btn" onclick="showNotification('Bientôt disponible !', 'warning')">1ère Année</button>
-        <button type="button" class="btn" onclick="showNotification('Bientôt disponible !', 'warning')">2ème Année</button>
+        <a href="annee2.html" class="btn">2ème Année</a>
         <button type="button" class="btn" onclick="showNotification('Bientôt disponible !', 'warning')">3ème Année</button>
         <button type="button" class="btn" onclick="showNotification('Bientôt disponible !', 'warning')">4ème Année</button>
         <button type="button" class="btn" onclick="showNotification('Bientôt disponible !', 'warning')">5ème Année</button>
